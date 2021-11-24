@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="img/ico.png" />
+    <title>UF1 NF2 Pt3 Materialize Framework</title>
 </head>
 
 <body class="blue-grey">
     <div class="container grey lighten-2">
-
+        <!-- Títol -->
         <div class="row">
             <div class="col s12 center-align">
                 <h1 class="">Pau Films</h1>
@@ -20,10 +21,12 @@
         </div>
 
         <div class="row">
+            <!-- Text introductori -->
             <div class="col s12 center-align flow-text">
                 <p>Benvinguts al la pàgina web de pel·lícules d'en Pau Muñoz!</p>
             </div>
 
+            <!-- Carrusel de fotos -->
             <div class="carousel">
                 <a class="carousel-item" href="#"><img src="img/antman.jpg"></a>
                 <a class="carousel-item" href="#"><img src="img/blackpanter.jpg"></a>
@@ -42,6 +45,7 @@
 
         </br></br>
 
+        <!-- Graella pel·lícules -->
         <div class="row">
             <div class="col s6 m3">
                 <div class="card z-depth-3">
@@ -268,18 +272,20 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
+
+        //Inicialitzar els modals
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.modal');
             var instances = M.Modal.init(elems, 0.5);
         });
 
-
+        //Inicialitzar els carrusel de fotos
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.carousel');
             var instances = M.Carousel.init(elems, {
                 duration: 200,
                 numVisible: 10,
-                shift: 100,
+                shift: 50,
                 dist: -100
             });
         });
